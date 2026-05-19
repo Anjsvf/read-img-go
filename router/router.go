@@ -52,7 +52,7 @@ func Setup(cfg *config.Config) *gin.Engine {
 
 	// CORS — permite o frontend acessar a API
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"https://read-img-front.vercel.app/"},
+		AllowOrigins:     []string{"https://read-img-front.vercel.app"},
 		AllowMethods:     []string{"GET", "POST", "PATCH", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 		ExposeHeaders:    []string{"Content-Length"},
